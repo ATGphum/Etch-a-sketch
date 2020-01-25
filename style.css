@@ -1,3 +1,30 @@
+#resize {
+    margin-left: 46%;
+    margin-right: auto;
+    width: 70px;
+    font-family: sans-serif;
+    border-left-color: rgba(255, 0, 0, 1);
+    border-top-color: rgba(0, 255, 0, 1);
+    border-right-color: rgba(0, 0, 255, 1);
+    border-width: thick;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70px;
+    height: 60px;
+    box-shadow: 0px 0px 20px #ff870b
+}
+
+#resize:hover {
+    box-shadow: 0px 0px 60px #fff70b
+}
+
+#container {
+   margin-left: auto;
+   margin-right: auto;
+   width: 35%;
+}
+
 .square {
    border-style:solid;
    

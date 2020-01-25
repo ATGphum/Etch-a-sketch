@@ -46,6 +46,8 @@ function square(pieces, size){
    piece.addEventListener('mouseover', function(){
       piece.classList.add('fill');
       piece.style.backgroundColor = 'rgb('+red+', '+green+', '+blue+')';
+      piece.style.border = '1px solid rgb('+green+', '+blue+', '+red+')';
+
 
       if(redAscend == true){
          red++;
@@ -102,6 +104,9 @@ function ask(){
    var newSize;
    while(!(newSize <= 100 && newSize > 0)){
       newSize = window.prompt("new grid size?");
+      if(newSize == null){
+         return;
+      }
    }
    grid(parseInt(newSize, 10));
 }
